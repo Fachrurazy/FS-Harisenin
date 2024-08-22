@@ -14,8 +14,8 @@
 
  <body class="bg-[#FCF8CA]">
     <!-- Navbar -->
-    <nav class="bg-white flex">
-        <svg class="ml-28 py-1" width="237" height="56" viewBox="0 0 237 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <nav class="flex bg-white">
+        <svg class="py-1 ml-28" width="237" height="56" viewBox="0 0 237 56" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.824 36.04L22 20.168H26.288L30.32 32.168L34.352 20.168H38.64L32.784 36.04H27.824Z" fill="#F64920"/>
             <path d="M43.6315 17.704C42.8848 17.704 42.2662 17.48 41.7755 17.032C41.3062 16.584 41.0715 16.0187 41.0715 15.336C41.0715 14.6533 41.3062 14.0987 41.7755 13.672C42.2662 13.224 42.8848 13 43.6315 13C44.3782 13 44.9862 13.224 45.4555 13.672C45.9462 14.0987 46.1915 14.6533 46.1915 15.336C46.1915 16.0187 45.9462 16.584 45.4555 17.032C44.9862 17.48 44.3782 17.704 43.6315 17.704ZM41.5835 36.04V20.168H45.6795V36.04H41.5835Z" fill="#F64920"/>
             <path d="M57.4507 36.424C55.9574 36.424 54.6241 36.0613 53.4508 35.336C52.2774 34.6107 51.3494 33.6187 50.6667 32.36C49.9841 31.1013 49.6427 29.672 49.6427 28.072C49.6427 26.472 49.9841 25.0533 50.6667 23.816C51.3494 22.5573 52.2774 21.576 53.4508 20.872C54.6241 20.1467 55.9574 19.784 57.4507 19.784C58.6454 19.784 59.6908 20.008 60.5868 20.456C61.4827 20.904 62.2081 21.5333 62.7627 22.344V13H66.8587V36.04H63.2108L62.7627 33.768C62.2507 34.472 61.5681 35.0907 60.7147 35.624C59.8827 36.1573 58.7947 36.424 57.4507 36.424ZM58.3148 32.84C59.6374 32.84 60.7147 32.4027 61.5467 31.528C62.4001 30.632 62.8268 29.4907 62.8268 28.104C62.8268 26.7173 62.4001 25.5867 61.5467 24.712C60.7147 23.816 59.6374 23.368 58.3148 23.368C57.0134 23.368 55.9361 23.8053 55.0827 24.68C54.2294 25.5547 53.8027 26.6853 53.8027 28.072C53.8027 29.4587 54.2294 30.6 55.0827 31.496C55.9361 32.392 57.0134 32.84 58.3148 32.84Z" fill="#F64920"/>
@@ -32,29 +32,27 @@
             </svg>   
     </nav>
     <!-- Navbar -->
-    <div class="min-h-screen flex flex-col justify-center">
-        <div class="px-9 py-10 bg-white w-full max-w-xl mx-auto">
+    <div class="flex flex-col justify-center min-h-screen">
+        <div class="w-full max-w-xl py-10 mx-auto bg-white px-9">
             <h3 class="font-[Poppins] font-semibold text-[32px] text-[#222325] flex justify-center items-center">Masuk Ke Akun</h3>
         <h4 class="font-[DM Sans] leading-6 text-[16px] text-[#333333AD] flex justify-center items-center">Yuk, lanjutin belajarmu di videobelajar.</h4>
             <form class="mt-8">
                 <div>
                     <label for="email" class="block text-base text-[#4A505C]">E-Mail <span class="text-red-600">*</span></label>
-                    <input type="email" name="email" class="w-full border border-gray-300 focus:outline-none focus:border-black px-3 px-3 py-2 rounded-md mt-1">
+                    <input type="email" name="email" class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:outline-none focus:border-black">
                 </div>
                 <div class="mt-4">
                     <div class="relative w-full">
-                        <div class="absolute inset-y-0 top-6 right-0 flex items-center px-2 py-2 z-10">
+                        <div class="absolute inset-y-0 right-0 z-10 flex items-center px-2 py-2 top-6">
                             <input type="checkbox" id="toggle" class="hidden">
-                            <label for="toggle" class="px-2 text-gray-500 cursor-pointer flex
-                             items-center justify-center">
-                              <svg class="w-6 h-6 fill-current text-gray-500" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <label for="toggle" class="flex items-center justify-center px-2 text-gray-500 cursor-pointer">
+                              <svg class="w-6 h-6 text-gray-500 fill-current" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.83 9.5L15 12.66V12.5C15 11.7044 14.6839 10.9413 14.1213 10.3787C13.5587 9.81607 12.7956 9.5 12 9.5H11.83ZM7.53 10.3L9.08 11.85C9.03 12.06 9 12.27 9 12.5C9 13.2956 9.31607 14.0587 9.87868 14.6213C10.4413 15.1839 11.2044 15.5 12 15.5C12.22 15.5 12.44 15.47 12.65 15.42L14.2 16.97C13.53 17.3 12.79 17.5 12 17.5C10.6739 17.5 9.40215 16.9732 8.46447 16.0355C7.52678 15.0979 7 13.8261 7 12.5C7 11.71 7.2 10.97 7.53 10.3ZM2 4.77L4.28 7.05L4.73 7.5C3.08 8.8 1.78 10.5 1 12.5C2.73 16.89 7 20 12 20C13.55 20 15.03 19.7 16.38 19.16L16.81 19.58L19.73 22.5L21 21.23L3.27 3.5M12 7.5C13.3261 7.5 14.5979 8.02678 15.5355 8.96447C16.4732 9.90215 17 11.1739 17 12.5C17 13.14 16.87 13.76 16.64 14.32L19.57 17.25C21.07 16 22.27 14.36 23 12.5C21.27 8.11 17 5 12 5C10.6 5 9.26 5.25 8 5.7L10.17 7.85C10.74 7.63 11.35 7.5 12 7.5Z" fill="#6C717A"/>
                                 </svg>
                             </label>
                         </div>
                         <label for="password" class="block text-base text-[#4A505C]">Kata Sandi <span class="text-red-600">*</span></label>
-                        <input type="password" id="password" class="w-full border border-gray-300 focus:outline-none
-                        focus:border-black px-3 py-2 rounded-md pr-16 mt-1">
+                        <input type="password" id="password" class="w-full px-3 py-2 pr-16 mt-1 border border-gray-300 rounded-md focus:outline-none focus:border-black">
                     </div>
                 </div>
                 <div class="text-sm leading-5 mt-4 flex flex-row-reverse text-[#4A505C] text-[DM Sans] text-base">
