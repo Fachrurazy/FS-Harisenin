@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <title>Beranda Page</title>
+</head>
+
+<body class="bg-[#FCF8CA]">
+    <!-- Navbar -->
+    <nav class="flex flex-wrap items-center px-6 py-2 bg-white shadow-md lg:px-16 lg:py-0">
+        <div class="flex items-center justify-between flex-1">
+            <a href="index.html" class="flex text-lg font-semibold">
+                <img class="my-5" src="Assets/Logo.png" alt="Logo-Videobelajar">
+            </a>
+            <label for="menu-toggle" class="block cursor-pointer lg:hidden">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 15.5V17.5H22V15.5H2ZM2 10.5V12.5H22V10.5H2ZM2 5.5V7.5H22V5.5H2Z" fill="#4A505C" />
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
+                <nav>
+                    <ul class="items-center pt-4 text-xl text-center gap-x-5 md:gap-x-4 lg:text-lg lg:flex lg:pt-0">
+                        <li class="py-2 lg:py-0 ">
+                            <a class="text[DM Sans] text-[#333333AD] text-base" href="#">
+                                Kategori
+                            </a>
+                        </li>
+                        <li class="py-2 lg:py-0 ">
+                            <a class="" href="#">
+                                <img src="Assets/Avatar-Header.png" alt="Avatar-Header-Girl">
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="relative py-16">
+            <div class="container relative px-6 m-auto xl:px-32 ">
+                <div class="m-auto">
+                    <div
+                        class="rounded-md shadow-xl bg-[url('./Assets/hero1.jfif')] bg-no-repeat bg-cover bg-slate-700 bg-blend-multiply">
+                        <div class="flex flex-col p-6 text-center xl:p-16">
+                            <div class="text-white">
+                                <h3 class="font-[Poppins] font-semibold text-3xl xl:text-4xl xl:px-60 mb-3">Revolusi
+                                    Pembelajaran: Temukan Ilmu Baru melalui Platform Video Interaktif!</h3>
+                                <h4 class="font-[DM Sans] text-base xl:text-lg ">Temukan ilmu baru yang menarik dan
+                                    mendalam melalui koleksi video pembelajaran berkualitas tinggi. Tidak hanya itu,
+                                    Anda juga dapat berpartisipasi dalam latihan interaktif yang akan meningkatkan
+                                    pemahaman Anda.</h4>
+                            </div>
+                            <form action="">
+                                <div>
+                                    <button type="submit"
+                                        class="w-auto bg-[#3ECF4C] hover:bg-green-500 text-white px-6 py-3 rounded-xl mt-6 font-[DM Sans]"><a
+                                            href="register.html">Temukan Video Course untuk Dipelajari!</button></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Hero Section -->
+                    <!-- Tabs Menu -->
+                    <div class="container">
+                        <div class="mt-6">
+                            <p class="text-2xl font-bold font-[DM Sans]">Koleksi Video Pembelajaran Unggulan</p>
+                        </div>
+                        <div class="mt-2 w">
+                            <p class="text-base font-[DM Sans] text-slate-600">Jelajahi Dunia Pengetahuan Melalui
+                                Pilihan Kami!</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 text-base lg:col-span-3 text-slate-600 whitespace-nowrap">
+                        <nav class="flex space-x-8 overflow-x-auto sm:overflow-hidden">
+                            <label href="#"
+                                class="flex py-4 border-b-2 border-transparent rounded-b-sm hover:border-b-red-600 hover:text-red-600 hover:font-semibold">
+                                Semua Kelas
+                            </label>
+
+                            <label href="#"
+                                class="flex py-4 border-b-2 border-transparent rounded-b-sm hover:border-b-red-600 hover:text-red-600 hover:font-semibold">
+                                Pemasaran
+                            </label>
+
+                            <label href="#"
+                                class="flex py-4 border-b-2 border-transparent rounded-b-sm hover:border-b-red-600 hover:text-red-600 hover:font-semibold">
+                                Desain
+                            </label>
+
+                            <label href="#"
+                                class="flex py-4 border-b-2 border-transparent rounded-b-sm hover:border-b-red-600 hover:text-red-600 hover:font-semibold">
+                                Pengembangan Diri
+                            </label>
+
+                            <label href="#"
+                                class="flex py-4 border-b-2 border-transparent rounded-b-sm hover:border-b-red-600 hover:text-red-600 hover:font-semibold">
+                                Bisnis
+                            </label>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Tabs Menu -->
+                <!-- Card 1 Start-->
+                <div class="container grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="p-5 bg-white border rounded-lg">
+                        <div class="container">
+                            <div class="max-sm:flex">
+                                <img class="object-cover max-sm:w-20 max-sm:h-20 rounded-xl" src="Assets/card1.png"
+                                    alt="card-image">
+                                <div class="max-sm:flex-col max-sm:ml-2">
+                                    <h2 class="font-[Poppins] text-lg font-semibold lg:mt-2 text-slate-800">Big 4
+                                        Auditor Financial Analyst</h2>
+                                    <p class="font-[DM Sans] text-slate-500 text-base max-sm:hidden">Mulai
+                                        transformasi dengan instruktur profesional, harga yang terjangkau, dan
+                                        kurikulum terbaik</p>
+                                    <div class="relative mt-2 ">
+                                        <img class="mr-2" src="Assets/Avatar.svg" alt="Avatar">
+                                        <div class="absolute left-11 -bottom-1">
+                                            <p class="text-sm font-semibold">Jena Ortega</p>
+                                            <p class="text-sm text-slate-600">Senior Accountant
+                                                <span class="max-sm:hidden">di
+                                                    <b>Gojek</b></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative flex mt-3">
+                            <img src="Assets/Rating.svg" alt="Rating">
+                            <div class="flex">
+                                <p class="ml-2 text-base underline underline-offset-2 text-slate-600">3.5 (86)</p>
+                                <p class="absolute right-0 text-lg font-semibold text-green-500">RP 300K</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 1 End -->
+
+                    <!-- Card 2 Start -->
+                    <div class="p-5 bg-white border rounded-lg">
+                        <div class="container">
+                            <div class="max-sm:flex">
+                                <img class="object-cover max-sm:w-20 max-sm:h-20 rounded-xl" src="Assets/card1.png"
+                                    alt="card-image">
+                                <div class="max-sm:flex-col max-sm:ml-2">
+                                    <h2 class="font-[Poppins] text-lg font-semibold lg:mt-2 text-slate-800">Big 4
+                                        Auditor Financial Analyst</h2>
+                                    <p class="font-[DM Sans] text-slate-500 text-base max-sm:hidden">Mulai
+                                        transformasi dengan instruktur profesional, harga yang terjangkau, dan
+                                        kurikulum terbaik</p>
+                                    <div class="relative mt-2 ">
+                                        <img class="mr-2" src="Assets/Avatar.svg" alt="Avatar">
+                                        <div class="absolute left-11 -bottom-1">
+                                            <p class="text-sm font-semibold">Jena Ortega</p>
+                                            <p class="text-sm text-slate-600">Senior Accountant
+                                                <span class="max-sm:hidden">di
+                                                    <b>Gojek</b></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative flex mt-3">
+                            <img src="Assets/Rating.svg" alt="Rating">
+                            <div class="flex">
+                                <p class="ml-2 text-base underline underline-offset-2 text-slate-600">3.5 (86)</p>
+                                <p class="absolute right-0 text-lg font-semibold text-green-500">RP 300K</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 End -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
